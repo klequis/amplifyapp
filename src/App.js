@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css'
+import withThemeProvider from './withThemeProvider'
+import Section from './Section'
+import Text from './Text'
 
-function App() {
+function App({ classes }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Section background="dark">
+      <Text variant="h1" align="center">
+        Private Money Tech
+      </Text>
+      <Text variant="h2" align="center">
+        Easy - Informative - Private
+      </Text>
+      <Text variant="body1" align="center">
+        We are just getting started.
+      </Text>
+      <Text variant="body1" align="center">
+        Contact: carl@private-money-tech.com
+      </Text>
+    </Section>
+  )
 }
 
-export default App;
+export default withThemeProvider(App)
