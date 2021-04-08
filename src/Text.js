@@ -61,7 +61,6 @@ const Text = ({
   if (!variants.includes(variant)) {
     return <p style={unknown}>unknow variant {variant}</p>
   }
-
   return <Component className={clsNames}>{children}</Component>
 }
 
